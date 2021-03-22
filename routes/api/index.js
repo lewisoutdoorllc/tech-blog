@@ -1,16 +1,14 @@
-// const router = require('express').Router();
-
-// const userRoutes = require('./user-routes');
-// const postRoutes = require('./post-routes');
+const router = require('express').Router();
+const userRoutes = require('./user-routes');
+const postRoutes = require('./post-routes');
 // const commentRoutes = require('./comment-routes');
 
-// router.use('/users', userRoutes);
-// router.use('/posts', postRoutes);
+router.use('/users', userRoutes);
+router.use('/posts', postRoutes);
+
 // router.use('/comments', commentRoutes);
 
-// module.exports = router;
+// const router = require('express').Router();
+// const userRoutes = require('./user-routes.js');
 
-const router = require('express').Router();
-const userRoutes = require('./user-routes.js');
-router.use('/users', userRoutes);
 module.exports = router;
