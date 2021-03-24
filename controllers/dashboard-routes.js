@@ -1,10 +1,10 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { Post, User, Comment, Vote } = require('../models');
-const withAuth = require('../utils/auth');
+const { Post, User, Comment } = require('../models');
+// const withAuth = require('../utils/auth');
 
-// get all posts for dashboard
-router.get('/', withAuth, (req, res) => {
+// RENDERS dashboard page for a LOGGED IN user only
+router.get('/', (req, res) => {
     console.log(req.session);
     console.log('======================');
     Post.findAll({
@@ -13,10 +13,9 @@ router.get('/', withAuth, (req, res) => {
         },
         attributes: [
             'id',
-            'post_url',
+            'post_data',
             'title',
             'created_at',
-            [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
         ],
         include: [
             {
@@ -42,15 +41,14 @@ router.get('/', withAuth, (req, res) => {
             res.status(500).json(err);
         });
 });
-
-router.get('/edit/:id', withAuth, (req, res) => {
+// ROUTE to edit a post by ID
+router.get('/edit/:id', (req, res) => {
     Post.findByPk(req.params.id, {
         attributes: [
             'id',
-            'post_url',
+            'post_data',
             'title',
             'created_at',
-            [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
         ],
         include: [
             {
@@ -82,6 +80,14 @@ router.get('/edit/:id', withAuth, (req, res) => {
         .catch(err => {
             res.status(500).json(err);
         });
+});
+
+router.get('/edit-post', (req, res) => {
+    res.render('edit-post');
+});
+
+router.get('/add-post', (req, res) => {
+    res.render('add-post');
 });
 
 module.exports = router;
