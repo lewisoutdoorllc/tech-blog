@@ -9,14 +9,17 @@
         <div class="col-sm-12 text-start text-light border border-info rounded-bottom my-2 fs-6 p-3 ps-1 bg-dark bg-gradient d-flex flex-wrap justify-content-center"
             style="width: 98%;">
             <div class="col-12">
-                Title:
+                {{title}}
             </div>
             <div class="input-group my-3 " style="width: 98%;">
                 <input type="text" class="form-control bg-dark text-info border-info" aria-label="text-input">
+                Posted by {{user.username}} on {{created_at}}
             </div>
 
             <div class="col-12">
-                Post Body:
+                Post Body: 
+                <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment"
+                    post.comments.length}}</a>
             </div>
 
             <div class="input-group my-3" style="width: 98%; height: 5rem;">
@@ -25,12 +28,13 @@
 
             <div class="col-12 d-flex flex-wrap row justify-content-between">
                 <div class="col-4">
-                    <a href=""><button id="add-post" type="button"
-                        class=" col-12 btn btn-dark btn-lg border-info my-2 text-center"><span class="me-3 ">+</span>Add
-                        Post</button></a>
+                    <a href=""><button id="add-post" type="submit"
+                            class=" col-12 btn btn-dark btn-lg border-info my-2 text-center"><span
+                                class="me-3 ">+</span>Add
+                            Post</button></a>
                 </div>
                 <div class="col-4">
-                    <button id="delete-post" type="button"
+                    <button id="delete-post-btn" type="button"
                         class=" col-12 btn btn-dark btn-lg border-info my-2 text-center"><span
                             class="me-3">-</span>Delete Post</button>
                 </div>
@@ -39,5 +43,7 @@
         </div>
     </div>
 </div>
-<script src="/javascript/add-post.js"></script>
+<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/delete-post.js"></script>
+<script src="/javascript/comment.js"></script>
 <!-- End Edit Post-->
