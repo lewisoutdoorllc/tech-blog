@@ -1,4 +1,4 @@
-{{!--  Edit Post  --}}
+{{!-- Edit Post --}}
 <div class="container-fluid border border-dark border-3 rounded-3 my-2 shadow" style="width: 80%;">
     <div class="d-flex flex-wrap row justify-content-between bg-dark bg-gradient">
         <div class="col-12 text-center text-light fs-3">
@@ -13,37 +13,35 @@
             </div>
             <div class="input-group my-3 " style="width: 98%;">
                 <textarea id="title" class="form-control bg-dark text-info border-info" id="title"
-                rows="1">{{post.title}}</textarea>
+                    rows="1">{{post.title}}</textarea>
             </div>
 
             <div class="col-12">
-                Post Body: 
+                Post Body:
             </div>
-            <div class="input-group my-3" style="width: 98%; height: 5rem;">
-                <input type="text-area" class="form-control bg-dark text-info border-info" aria-label="text-area">
-            </div>
-                <textarea id="post" class="form-control bg-dark text-info border-info" id="post-body"
+         
+            <textarea id="post" class="form-control bg-dark text-info border-info" id="post-body"
                 rows="3">{{post.post_data}}</textarea>
-            </div>
+        </div>
 
-            <div class="col-12 d-flex flex-wrap row justify-content-between">
-                <div class="col-4">
-                    <a href=""><button id="update" type="button"
-                            class=" col-12 btn btn-dark btn-lg border-info my-2 text-center"><span
-                                class="me-3 ">+</span>Update
-                            Post</button></a>
-                </div>
-                <div class="col-4">
-                    <button id="delete" type="button"
+        <div class="col-12 d-flex flex-wrap row justify-content-between">
+            <div class="col-4">
+                <a href=""><button id="update" type="button"
                         class=" col-12 btn btn-dark btn-lg border-info my-2 text-center"><span
-                            class="me-3">-</span>Delete Post</button>
-                </div>
-
+                            class="me-3 ">+</span>Update
+                        Post</button></a>
             </div>
+            <div class="col-4">
+                <button id="delete" type="button" class=" col-12 btn btn-dark btn-lg border-info my-2 text-center"><span
+                        class="me-3">-</span>Delete Post</button>
+            </div>
+
         </div>
     </div>
 </div>
+</div>
 <script src="/javascript/edit-post.js"></script>
 <script src="/javascript/delete-post.js"></script>
-{{!-- <script src="/javascript/comment.js"></script> --}}
+{{!--
+<script src="/javascript/comment.js"></script> --}}
 {{!-- End Edit Post --}}

@@ -5,6 +5,10 @@ const { Post, User, Comment } = require('../models');
 
 // RENDERS dashboard page for a LOGGED IN user only
 router.get('/', (req, res) => {
+    let logged = req.session.loggedIn
+    if(!logged){
+        res.redirect('/login')
+    }
     console.log(req.session);
     console.log('======================');
     Post.findAll({
@@ -43,6 +47,10 @@ router.get('/', (req, res) => {
 });
 // ROUTE to edit a post by ID
 router.get('/edit/:id', (req, res) => {
+    let logged = req.session.loggedIn
+    if(!logged){
+        res.redirect('/login')
+    }
     Post.findByPk(req.params.id, {
         attributes: [
             'id',
@@ -82,12 +90,16 @@ router.get('/edit/:id', (req, res) => {
         });
 });
 
-router.get('/edit-post', (req, res) => {
-    res.render('edit-post');
-});
+// router.get('/edit-post', (req, res) => {
+//     res.render('edit-post');
+// });
 
 router.get('/add-post', (req, res) => {
-    res.render('add-post');
+    let logged = req.session.loggedIn
+    if(!logged){
+        res.redirect('/login')
+    }
+    res.render('add-post', {loggedIn:true});
 });
 
 module.exports = router;

@@ -1,38 +1,46 @@
-
+{{!-- HOMEPAGE when user is logged in --}}
+{{#if loggedIn}}
+{{#each posts }}
 <a id="link" href="/view-comment/{{id}}" class="text-decoration-none ">
-<div class="container-fluid border border-dark border-3 rounded-3 my-2 shadow-1g" style="width: 70%;">
+  <div class="container-fluid border border-dark border-3 rounded-3 my-2 shadow-1g" style="width: 70%;">
     <div class="d-flex flex-wrap row justify-content-between bg-dark bg-gradient">
-        <div class="col-6 text-start text-white fs-3">
-            {{title}}
-        </div>
-        <div class="col-6 text-end text-muted mt-3">
-            Posted by {{user.username}} on {{format_date created_at}}
-        </div>
+      <div class="col-6 text-start text-white fs-3">
+        {{title}}
+      </div>
+      <div class="col-6 text-end text-muted mt-3">
+        Posted by {{user.username}} on {{format_date created_at}}
+      </div>
     </div>
     <div class="d-flex flex-wrap justify-content-center row bg-dark bg-gradient">
-        <div class="col-sm-12 text-start text-info border border-info rounded-bottom my-2 fs-6 p-3 bg-dark bg-gradient"
-            style="width: 99%;">
-            {{post_data}}
-        </div>
+      <div class="col-sm-12 text-start text-info border border-info rounded-bottom my-2 fs-6 p-3 bg-dark bg-gradient"
+        style="width: 99%;">
+        {{post_data}}
+      </div>
     </div>
-</div>
+  </div>
 </a>
-
+{{/each}}
+{{/if}}
+{{!-- HOMEPAGE if user is not actively logged in --}}
+{{#unless loggedIn}}
+{{#each posts }}
 <a id="link" href="/login" class="text-decoration-none ">
-<div class="container-fluid border border-dark border-3 rounded-3 my-2 shadow-1g" style="width: 70%;">
+  <div class="container-fluid border border-dark border-3 rounded-3 my-2 shadow-1g" style="width: 70%;">
     <div class="d-flex flex-wrap row justify-content-between bg-dark bg-gradient">
-        <div class="col-6 text-start text-white fs-3">
-            {{title}}
-        </div>
-        <div class="col-6 text-end text-muted mt-3">
-            Posted by {{user.username}} on {{format_date created_at}}
-        </div>
+      <div class="col-6 text-start text-white fs-3">
+        {{title}}
+      </div>
+      <div class="col-6 text-end text-muted mt-3">
+        Posted by {{user.username}} on {{format_date created_at}}
+      </div>
     </div>
     <div class="d-flex flex-wrap justify-content-center row bg-dark bg-gradient">
-        <div class="col-sm-12 text-start text-info border border-info rounded-bottom my-2 fs-6 p-3 bg-dark bg-gradient"
-            style="width: 99%;">
-            {{post_data}}
-        </div>
+      <div class="col-sm-12 text-start text-info border border-info rounded-bottom my-2 fs-6 p-3 bg-dark bg-gradient"
+        style="width: 99%;">
+        {{post_data}}
+      </div>
     </div>
-</div>
+  </div>
 </a>
+{{/each}}
+{{/unless}}
