@@ -3,14 +3,14 @@
     style="width: 80%;">
     <div class="col-12 d-flex flex-wrap row justify-content-end">
         <div class="col-4">
-            <a href="/add-post"><button id="add-post" type="submit" class=" col-12 btn btn-dark btn-lg border-info my-2"><span class="me-3 ">+</span>Add
+            <button id="add-post" type="button" class=" col-12 btn btn-dark btn-lg border-info my-2"><span class="me-3 ">+</span>Add
                 Post</button></a>
         </div>
 
     </div>
 
     {{#each posts}}
-    <a href="/dashboard/edit-post" class="text-decoration-none text-info ms-1">
+    <a href="/dashboard/edit/{{this.id}}" class="text-decoration-none text-info ms-1">
         <div class="d-flex flex-wrap row justify-content-between bg-dark bg-gradient my-2 border border-2 rounded border-info"
             style="width: 98%;">
             <div class="col-6 text-start text-white fs-3">

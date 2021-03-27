@@ -7,7 +7,7 @@ async function signupFormHandler(event) {
 
   if (username && email && password) {
     // const response = await fetch("/api/users", {
-    const response = await fetch("/api/users/login", {
+    const response = await fetch("/api/users", {
       method: "post",
       body: JSON.stringify({
         username,
@@ -18,7 +18,7 @@ async function signupFormHandler(event) {
     });
 
     if (response.ok) {
-      document.location.replace("success");
+      document.location.replace("/");
     } else {
       alert(response.statusText);
     }
@@ -28,3 +28,35 @@ async function signupFormHandler(event) {
 document
   .querySelector(".signup-form")
   .addEventListener("click", signupFormHandler);
+
+async function formHandler(event) {
+
+  if (event.code === "Enter") {
+
+  const username = document.querySelector("#username-signup").value.trim();
+  const email = document.querySelector("#email-signup").value.trim();
+  const password = document.querySelector("#password-signup").value.trim();
+
+  if (username && email && password) {
+    // const response = await fetch("/api/users", {
+    const response = await fetch("/api/users", {
+      method: "post",
+      body: JSON.stringify({
+        username,
+        email,
+        password,
+      }),
+      headers: { "Content-Type": "application/json" },
+    });
+
+    if (response.ok) {
+      document.location.replace("/");
+    } else {
+      alert(response.statusText);
+    }
+  }
+} else {return}
+}
+
+document
+  .addEventListener("keydown", formHandler);
