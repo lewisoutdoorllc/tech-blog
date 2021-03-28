@@ -17,22 +17,22 @@
     <!-- Header with Nav and Logo -->
     <header class="bg-dark">
         <nav class="nav navbar-dark bg-dark ms-4 fs-4 ">
-            <a class="nav-link link-info" href="/">Home</a>
+            <a class="nav-link link-warning" href="/">Home</a>
             {{#if loggedIn}}
-            <a class="nav-link link-info" href="/dashboard">Dashboard</a>
+            <a class="nav-link link-warning" href="/dashboard">Dashboard</a>
             {{/if}}
             {{#unless loggedIn}}
-            <a class="nav-link link-info" href="/login">Login</a>
-            <a class="nav-link link-info" href="/signup">Sign Up</a>
+            <a class="nav-link link-warning" href="/login">Login</a>
+            <a class="nav-link link-warning" href="/signup">Sign Up</a>
             {{/unless}}
             {{#if loggedIn}}
-            <a id="logout" class="nav-link link-info" href="">Logout</a>
+            <a id="logout" class="nav-link link-warning" href="">Logout</a>
             {{/if}}
         </nav>
         <!-- Logo -->
         <div class="bg-dark mb-5">
             <button type="button"
-                class="btn btn-dark border border-info border-3 rounded-5 ms-5 my-3 fs-1 px-3 text-center">Tech
+                class="btn btn-dark text-white border border-warning border-3 rounded-5 ms-5 my-3 fs-1 px-3 text-center">Tech
                 Blog</button>
         </div>
     </header>

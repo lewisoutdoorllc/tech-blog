@@ -1,18 +1,18 @@
 {{!-- Edit Post --}}
 <div class="container-fluid border border-dark border-3 rounded-3 my-2 shadow" style="width: 80%;">
     <div class="d-flex flex-wrap row justify-content-between bg-dark bg-gradient">
-        <div class="col-12 text-center text-light fs-3">
+        <div class="col-12 text-center text-warning fs-3">
             Edit Post
         </div>
     </div>
     <div class="d-flex flex-wrap justify-content-center row bg-dark ">
-        <div class="col-sm-12 text-start text-light border border-info rounded-bottom my-2 fs-6 p-3 ps-1 bg-dark bg-gradient d-flex flex-wrap justify-content-center"
+        <div class="col-sm-12 text-start text-warning border border-warning rounded-bottom my-2 fs-6 p-3 ps-1 bg-dark bg-gradient d-flex flex-wrap justify-content-center"
             style="width: 98%;">
             <div class="col-12">
                 Title:
             </div>
             <div class="input-group my-3 " style="width: 98%;">
-                <textarea id="title" class="form-control bg-dark text-info border-info" id="title"
+                <textarea id="title" class="form-control bg-dark text-warning border-warning" id="title"
                     rows="1">{{post.title}}</textarea>
             </div>
 
@@ -20,20 +20,20 @@
                 Post Body:
             </div>
          
-            <textarea id="post" class="form-control bg-dark text-info border-info" id="post-body"
+            <textarea id="post" class="form-control bg-dark text-warning border-warning" id="post-body"
                 rows="3">{{post.post_data}}</textarea>
         </div>
 
         <div class="col-12 d-flex flex-wrap row justify-content-between">
             <div class="col-4">
                 <a href=""><button id="update" type="button"
-                        class=" col-12 btn btn-dark btn-lg border-info my-2 text-center"><span
-                            class="me-3 ">+</span>Update
+                        class=" col-12 btn btn-dark btn-lg border-warning my-2 text-center"><span
+                            class="me-3 text-warning">+</span>Update
                         Post</button></a>
             </div>
             <div class="col-4">
-                <button id="delete" type="button" class=" col-12 btn btn-dark btn-lg border-info my-2 text-center"><span
-                        class="me-3">-</span>Delete Post</button>
+                <button id="delete" type="button" class=" col-12 btn btn-dark btn-lg border-danger my-2 text-danger text-center"><span
+                        class="me-3 text-danger">-</span>Delete Post</button>
             </div>
 
         </div>
