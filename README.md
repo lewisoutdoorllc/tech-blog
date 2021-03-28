@@ -1,6 +1,7 @@
 # Tech Blog
 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) !['alt text'](https://img.shields.io/badge/JavaScript-100%25-blue)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) !['alt text'](https://img.shields.io/badge/JavaScript-66.2%25-blue)
+  !['alt text'](https://img.shields.io/badge/Handlebars-29.0%25-orange) !['alt text'](https://img.shields.io/badge/CSS-4.8%25-green)
   # Table of Contents 
   
   * [Description](#description)
@@ -31,7 +32,7 @@ If you install please be sure to edit the .env with your proper credentials. Ple
   
   # Technology
   
-  !['alt text'](https://img.shields.io/badge/JavaScript-100%25-blue) 
+  !['alt text'](https://img.shields.io/badge/JavaScript-66.2%25-blue)   !['alt text'](https://img.shields.io/badge/Handlebars-29.0%25-orange) !['alt text'](https://img.shields.io/badge/CSS-4.8%25-green)
 
   # Usage
 
