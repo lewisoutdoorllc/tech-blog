@@ -1,7 +1,7 @@
 # Tech Blog
 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) !['alt text'](https://img.shields.io/badge/JavaScript-66.2%25-blue)
-  !['alt text'](https://img.shields.io/badge/Handlebars-29.0%25-orange) !['alt text'](https://img.shields.io/badge/CSS-4.8%25-green)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) !['alt text'](https://img.shields.io/badge/JavaScript-66.4%25-blue)
+  !['alt text'](https://img.shields.io/badge/Handlebars-33.6%25-orange) 
   # Table of Contents 
   
   * [Description](#description)
@@ -32,8 +32,8 @@ If you install please be sure to edit the .env with your proper credentials. "ON
   
   # Technology
   
-  !['alt text'](https://img.shields.io/badge/JavaScript-66.2%25-blue)   !['alt text'](https://img.shields.io/badge/Handlebars-29.0%25-orange) !['alt text'](https://img.shields.io/badge/CSS-4.8%25-green)
-
+  !['alt text'](https://img.shields.io/badge/JavaScript-66.4%25-blue)   !['alt text'](https://img.shields.io/badge/Handlebars-33.6%25-orange) 
+  
   # Usage
 
 Tech Blog is a blogging website that allows the user to simply add post, edit post, comment on post, and edit and delete as needed. If you do not have an account click on Sign Up. Once you have logged in or signed up you will be taken to the homepage, you will have the choice to click on posts to view or add comments. The Dashboard will allow you to view, edit, or make a new post. After 5 minutes of no activity on the site you will be logged out.
