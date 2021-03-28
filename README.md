@@ -24,7 +24,7 @@ If you would like to use or test the application for youself just click on the L
 
 In your code editor navigate to the root of the API in your command line and run 'npm install';
 
-If you install please be sure to edit the .env with your proper credentials. Please enjoy. 
+If you install please be sure to edit the .env with your proper credentials. "ONCE YOU HAVE DONE THAT MAKE SURE YOU COMMENT BACK IN THE .ENV IN THE .GITIGNORE FILE TO PROTECT YOU PERSONAL INFORMATION". Please enjoy. 
 
   [Tech Blog](https://github.com/lewisoutdoorllc/tech-blog)
   
@@ -40,7 +40,7 @@ Tech Blog is a blogging website that allows the user to simply add post, edit po
 
   # Screenshot
     
-  ![Tech Blog](media/screen_shot.png)
+  ![Tech Blog](media/tech_blog.gif)
 
   # Test
 
