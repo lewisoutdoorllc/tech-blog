@@ -7,7 +7,5 @@ router.use('/users', userRoutes);
 router.use('/posts', postRoutes);
 router.use('/comments', commentRoutes);
 
-// const router = require('express').Router();
-// const userRoutes = require('./user-routes.js');
 
 module.exports = router;
