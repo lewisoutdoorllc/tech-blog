@@ -15,6 +15,7 @@
   * [License](#license)
   
   # Description
+  [Tech Blog Site](https://stark-stream-49625.herokuapp.com/)
 
  Tech Blog is a blogging website that allows the user to simply add post, edit post, comment on post, and edit and delete as needed. 
   
@@ -26,15 +27,16 @@ In your code editor navigate to the root of the API in your command line and run
 
 If you install please be sure to edit the .env with your proper credentials. "ONCE YOU HAVE DONE THAT MAKE SURE YOU COMMENT BACK IN THE .ENV IN THE .GITIGNORE FILE TO PROTECT YOU PERSONAL INFORMATION". Please enjoy. 
 
-  [Tech Blog](https://github.com/lewisoutdoorllc/tech-blog)
+  [Tech Blog GitHub Repo](https://github.com/lewisoutdoorllc/tech-blog)
   
 
   
   # Technology
   
   !['alt text'](https://img.shields.io/badge/JavaScript-66.4%25-blue)   !['alt text'](https://img.shields.io/badge/Handlebars-33.6%25-orange) 
-  
+
   # Usage
+[Tech Blog Site](https://stark-stream-49625.herokuapp.com/)  
 
 Tech Blog is a blogging website that allows the user to simply add post, edit post, comment on post, and edit and delete as needed. If you do not have an account click on Sign Up. Once you have logged in or signed up you will be taken to the homepage, you will have the choice to click on posts to view or add comments. The Dashboard will allow you to view, edit, or make a new post. After 5 minutes of no activity on the site you will be logged out.
 
