@@ -42,10 +42,4 @@ sequelize.sync({ force: false }).then(() => {
 
 
 
-// //IMPORT HANDLEBARS HELPERS
-// const helpers = require('./utils/helpers');
-
-
-
-
 
