@@ -175,13 +175,14 @@ router.get('/edit-comment/:id', (req, res) => {
         .then(dbPostData => {
             if (dbPostData) {
                 const edit = dbPostData.get({ plain: true });
-                if (comment.user_id === user) {
+                console.log(user);
+                if (edit.user_id === user) {
                 res.render('edit-comment', {
                     edit,
                     loggedIn: true
                 });
             } else {
-                res.redirect(`/view-comment/${comment.post_id}`);
+                res.redirect(`/view-comment/${edit.post_id}`);
             }
             } else {
                 res.status(404).end();

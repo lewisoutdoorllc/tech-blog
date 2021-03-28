@@ -12,16 +12,16 @@
 
             <div class="input-group my-3" style="width: 98%; height: 5rem;">
                 <textarea id="post" class="form-control bg-dark text-info border-info" id="post-body"
-                    rows="3">{{comment.comment_text}}</textarea>
+                    rows="3">{{edit.comment_text}}</textarea>
             </div>
 
             <div class="col-12 d-flex flex-wrap row justify-content-between">
                 <div class="col-lg-4 col-sm-12 ">
-                    <button type="button" id="update" class=" col-12 btn btn-dark btn-lg border-info my-2 text-center" data-user-id="{{comment.user_id}}" data-post="{{comment.post_id}}"><span
+                    <button type="button" id="update" class=" col-12 btn btn-dark btn-lg border-info my-2 text-center" data-user-id="{{edit.user_id}}" data-post="{{edit.post_id}}"><span
                             class="me-3 text-success fs-4">+</span>Update comment</button>
                 </div>
                 <div class="col-lg-4 col-sm-12">
-                    <button type="button" id="delete" class=" col-12 btn btn-dark btn-lg border-danger my-2 text-center"data-user-id="{{comment.user_id}}"data-post="{{comment.post_id}}"><span
+                    <button type="button" id="delete" class=" col-12 btn btn-dark btn-lg border-danger my-2 text-center"data-user-id="{{edit.user_id}}"data-post="{{edit.post_id}}"><span
                             class="me-3 text-danger fs-4">x</span>Delete comment</button>
                 </div>
 
@@ -31,5 +31,5 @@
         </div>
     </div>
 </div>
-<script src="/javascript/edit-comment.js"></script>
+<script src="/javascript/edit-comments.js"></script>
 <script src="/javascript/delete-comment.js"></script>

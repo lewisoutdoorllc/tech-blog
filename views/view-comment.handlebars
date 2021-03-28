@@ -8,7 +8,7 @@
             Comments
         </div>
     </div>
-    {{#each post-comments}}
+    {{#each post.comments}}
     <div class="d-flex flex-wrap justify-content-center row bg-dark bg-gradient">
         <a data-post="{{post.id}}" href="/edit-comment/{{id}}"
             class="text-decoration-none col-sm-12 text-start text-info border border-info rounded-bottom my-2 fs-6 p-3 bg-dark bg-gradient"
@@ -20,7 +20,7 @@
     </div>
     {{/each}}
 </div>
-
+{{/if}}
 
 <div class="container-fluid border border-dark border-3 rounded-3 my-2 shadow" style="width: 70%;">
     <div class="d-flex flex-wrap row justify-content-between bg-dark bg-gradient">
